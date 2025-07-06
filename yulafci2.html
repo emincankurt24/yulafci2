@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Hızlı Düşün</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #e6ccff; /* Açık mor */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    #kapsayici {
+      background-color: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .butonlar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #evet {
+      background-color: #8e44ad;
+      color: white;
+    }
+
+    #hayir {
+      background-color: #ccc;
+    }
+
+    #evet:hover {
+      background-color: #732d91;
+    }
+
+    #hayir:hover {
+      background-color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="kapsayici">
+    <h1>Hızlı düşünür müsün?</h1>
+    <div class="butonlar">
+      <button id="evet">Evet</button>
+      <button id="hayir">Hayır</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("evet").addEventListener("click", () => {
+      document.body.innerHTML = "<h2 style='text-align:center; color:white; font-family:sans-serif;'>Serisinden cevap bekliyorum...</h2>";
+      document.body.style.backgroundColor = "#2c003e"; // Daha koyu mor arka plan
+    });
+
+    document.getElementById("hayir").addEventListener("click", () => {
+      window.location.href = "https://youtu.be/s6hSLyLuoVc?si=vevr462BucQADj_A";
+    });
+  </script>
+
+</body>
+</html>
